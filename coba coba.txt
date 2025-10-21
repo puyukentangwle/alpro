@@ -1,0 +1,6 @@
+git clone link
+cd nama filenya
+ls
+git add .
+git commit -m "Tugas selesai"
+git push origin main

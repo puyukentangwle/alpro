@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main () {
+    int pilihan = 1;
+    do{
+        printf ("Menu resto touch screen\n");
+           printf ("1. pilih masakan\n");
+           printf ("2. cetak struk\n");
+           printf ("3. keluar\n") ;
+           printf ("masukkan pilihan: ");
+        scanf ("%d", & pilihan);
+    } while (pilihan !=3);
+    printf ("Terima kasih\n");
+}

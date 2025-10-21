@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int total = 0;
+    int nilai = 0;
+    float rataRata = 0;
+    int jumlah = 0;
+
+    while (jumlah < 10) {
+        printf("Masukkan nilai siswa ke-%d: ", jumlah + 1);
+        scanf("%d", &nilai);
+
+        if (nilai >= 0 && nilai <= 100) {
+            total += nilai;
+            jumlah++;
+        } else {
+            printf("Nilai tidak valid, silakan masukkan ulang.\n");
+        }
+    }
+
+    rataRata = total / 10.0;  // Pakai 10.0 supaya hasilnya float
+    printf("Rata-rata nilai kelas: %.2f\n", rataRata);
+
+    return 0;
+}
